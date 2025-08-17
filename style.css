@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.square{
+    width :400px;
+    height :400px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%, #000dff3b 50%);
+    box-shadow: 0 0 50px rgb(25,25,255),inset 0 0 50px rgb(25,25,255);
+    border-radius:30% 60% 63% 37%/40% 45% 58% 60%;
+    transition:0.4s;
+    cursor: pointer;
+    animation: animate1 6s infinite linear;
+}
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%, #000dff3b 50%);
+    box-shadow: 0 0 50px rgb(25,25,255),inset 0 0 50px rgb(25,25,255);
+    border-radius:30% 60% 63% 37%/40% 45% 58% 60%;
+    transition:0.4s;
+    cursor: pointer;
+    animation: animate2 4s infinite linear;
+}
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%, #000dff3b 50%);
+    box-shadow: 0 0 50px rgb(25,25,255),inset 0 0 50px rgb(25,25,255);
+    border-radius:30% 60% 63% 37%/40% 45% 58% 60%;
+    transition:0.4s;
+    cursor: pointer;
+    animation: animate3 8s infinite linear;
+}
+
+
+@keyframes animate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+
+  
+
+#btn{
+    width:30%;
+    background: linear-gradient(to right, rgba(11, 29, 44, 0.86),rgba(7, 47, 98, 255));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+    gap:10px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow:2px 2px 10px rgb(11, 48, 67),2px 2px 10px rgb(11, 2, 83);
+    transition: 0.5s;
+    cursor: pointer;
+    color:aliceblue;
+}
+#btn:hover{
+    box-shadow:2px 2px 20px rgba(200, 198, 216, 0.523),2px 2px 20px rgb(11, 3, 77);
+    letter-spacing: 2px;;
+}
+
+
